@@ -19,6 +19,8 @@
             @csrf
             @method('post')
 
+            @include('dashboard.partials._errors')
+
             <div class="form-group">
 
                 <label>Name</label>
