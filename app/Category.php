@@ -9,7 +9,7 @@ class Category extends Model
     protected $fillable =['name'];
 
 
-    //attributes-----------
+    //attributes-------------------------------
 
     public function getNameAttribute($value){
 
@@ -17,5 +17,14 @@ class Category extends Model
 
     }//end of getNameAttribute هذه لجعل أول حرف كابتل
 
+
+    //scopes --------------------------------------
+    public function scopeWhenSearch($query, $search)
+    {
+        return $query->when($search, function ($q) use ($search) {
+            return $q->where('name', 'like', "%$search%");
+        });
+
+    }// end of scopeWhenSearch
 
 }//end of model
