@@ -24,7 +24,7 @@
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="search" class="form-control" placeholder="search">
+                                <input type="text"  name="search" autofocus class="form-control" placeholder="search" value="{{request()->search}}">
                             </div>
                         </div><!--end of col-->
 
