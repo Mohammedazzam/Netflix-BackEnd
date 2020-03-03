@@ -14,6 +14,10 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    {{--noty--}}
+
+    <link rel="stylesheet" href="{{asset('dashboard_files/plugins/noty/noty.css')}}">
+    <script src="{{asset('dashboard_files/plugins/noty/noty.min.js')}}"></script>
     <style>
         label{
             font-weight: bold;
@@ -28,8 +32,10 @@
 <!-- Sidebar menu-->
 
 @include('layouts.dashboard._aside')
+
 <main class="app-content">
 
+@include('dashboard.partials._sessions')
 
     @yield('content')
 
