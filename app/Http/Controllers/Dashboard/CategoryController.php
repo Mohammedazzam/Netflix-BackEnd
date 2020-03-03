@@ -19,7 +19,9 @@ class CategoryController extends Controller
 
     public function create(){
 
-    }//end of create
+        return view('dashboard.categories.create');
+
+    }//end of createF
 
     public function update(){
 

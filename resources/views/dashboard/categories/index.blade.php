@@ -30,7 +30,7 @@
 
                         <div class="col-md-4">
                             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Search</button>
-                            <a href="" class="btn btn-primary"><i class="fa fa-plus"></i>Add</a>
+                            <a href="{{route('dashboard.categories.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i>Add</a>
                         </div>
                     </div><!--end of row-->
 
@@ -72,7 +72,7 @@
                     </table>
 
                 @else
-                    <h3>Sorry No Data Records Found </h3>
+                    <h3 style="font-weight: 400">Sorry No Data Records Found </h3>
 
                 @endif
             </div>
