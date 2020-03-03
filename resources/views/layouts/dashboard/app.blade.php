@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="{{asset('dashboard_files/plugins/noty/noty.css')}}">
     <script src="{{asset('dashboard_files/plugins/noty/noty.min.js')}}"></script>
+
+
     <style>
         label{
             font-weight: bold;
