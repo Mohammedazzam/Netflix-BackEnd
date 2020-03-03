@@ -36,25 +36,30 @@ class CategoryController extends Controller
     }//end of store
 
 
-    public function edit(Category $category){
-        return view('dashboard.categories.edit',compact('category'));
+    public function edit(Category $category)
+    {
+        return view('dashboard.categories.edit', compact('category'));
+
     }//end of edit
 
-    public function update(Request $request, Category $category){
-
+    public function update(Request $request, Category $category)
+    {
         $request->validate([
-            'name' => 'required|unique:categories,name'. $category->id,
+            'name' => 'required|unique:categories,name,' . $category->id,
         ]);
 
         $category->update($request->all());
-        session()->flash('success','Data updated successfully');
-        redirect()->route('dashboard.categories.index');
-
+        session()->flash('success', 'Data updated successfully');
+        return redirect()->route('dashboard.categories.index');
 
     }//end of update
 
 
-    public function destroy(){
+    public function destroy(Category $category){
+
+        $category->delete();
+        session()->flash('success','Data deleted successfully');
+        return redirect()->route('dashboard.categories.index');
 
     }//end of destroy
 
