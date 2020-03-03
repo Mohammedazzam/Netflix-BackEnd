@@ -58,7 +58,7 @@
                                     <td>{{$index+1}}</td>
                                     <td>{{$category->name}}</td>
                                     <td>
-                                        <a href="{{route('dashboard.categories.edit',$category->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i>Edit</a>
+                                        <a href="{{route('dashboard.categories.edit',$category->id)}}" class="btn btn-warning  btn-sm"><i class="fa fa-edit"></i>Edit</a>
                                         <form method="post" action="{{route('dashboard.categories.destroy',$category->id)}}" style="display: inline-block">
                                             @csrf
                                             @method('delete')
