@@ -71,6 +71,8 @@
                         </tbody>
                     </table>
 
+                    {{$categories->appends(request()->query())->links()}}
+
                 @else
                     <h3 style="font-weight: 400">Sorry No Data Records Found </h3>
 
