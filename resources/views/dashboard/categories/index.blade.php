@@ -53,13 +53,13 @@
                         </thead>
 
                         <tbody>
-                            @foreach($categories as $category)
+                            @foreach($categories as $index=>$category)
                                 <tr>
                                     <td>{{$index+1}}</td>
                                     <td>{{$category->name}}</td>
                                     <td>
-                                        <a href="{{route('dashboard.categories.edit',$category->id)}}"><i class="fa fa-edit"></i>Edit</a>
-                                        <form method="post" action="{{route('dashboard.categories.delete')}}">
+                                        <a href="{{route('dashboard.categories.edit',$category->id)}}" class="btn btn-primary"><i class="fa fa-edit"></i>Edit</a>
+                                        <form method="post" action="{{route('dashboard.categories.destroy',$category->id)}}" style="display: inline-block">
                                             @csrf
                                             @method('delete')
 

@@ -23,6 +23,18 @@ class CategoryController extends Controller
 
     }//end of createF
 
+    public function store(Request $request){
+        $request->validate([
+           'name' => 'required|unique:categories,name',
+
+        ]);
+
+        Category::create($request->all());
+        session()->flash('success','data added successfully');
+        return redirect()->route('dashboard.categories.index');
+
+    }//end of store
+
     public function update(){
 
     }//end of update
