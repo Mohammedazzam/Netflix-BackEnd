@@ -48,5 +48,28 @@
 <script src="{{asset('dashboard_files/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('dashboard_files/js/main.js')}}"></script>
 
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.delete', function (e) {
+            e.preventDefault();
+            var that = $(this);
+            var n = new Noty({
+                text: "Confirm deleting record",
+                killer: true,
+                buttons: [
+                    Noty.button('Yes', 'btn btn-success mr-2', function () {
+                        that.closest('form').submit()
+                    }),
+                    Noty.button('No', 'btn btn-danger', function () {
+                        n.close();
+                    }),
+                ]
+            });
+            n.show();
+        });
+    });//end of document ready
+</script>
+
+
 </body>
 </html>
