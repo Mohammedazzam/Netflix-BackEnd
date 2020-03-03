@@ -35,6 +35,11 @@ class CategoryController extends Controller
 
     }//end of store
 
+
+    public function edit(Category $category){
+        return view('dashboard.categories.edit',compact('category'));
+    }//end of edit
+
     public function update(){
 
     }//end of update
