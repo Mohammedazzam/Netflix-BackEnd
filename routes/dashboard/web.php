@@ -11,5 +11,8 @@ Route::prefix('dashboard')
     Route::get('/','WelcomeController@index')->name('welcome');
 
     //category routes
-    Route::resource('categories','CategoryController');
+    Route::resource('categories','CategoryController')->except(['show']);
+
+    //role routes
+    Route::resource('roles','RoleController')->except(['show']);
 });
