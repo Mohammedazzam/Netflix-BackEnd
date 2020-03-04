@@ -2,23 +2,15 @@
 
 return [
     'role_structure' => [
-        'superadministrator' => [
+        'super_admin' => [
             'users' => 'c,r,u,d',
-            'acl' => 'c,r,u,d',
-            'profile' => 'r,u'
+            'categories' => 'c,r,u,d',
         ],
-        'administrator' => [
-            'users' => 'c,r,u,d',
-            'profile' => 'r,u'
-        ],
-        'user' => [
-            'profile' => 'r,u'
-        ],
+        'admin' => [],
+        'user' => [],
     ],
     'permission_structure' => [
-        'cru_user' => [
-            'profile' => 'c,r,u'
-        ],
+
     ],
     'permissions_map' => [
         'c' => 'create',

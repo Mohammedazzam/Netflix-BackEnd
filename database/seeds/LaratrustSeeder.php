@@ -40,7 +40,7 @@ class LaratrustSeeder extends Seeder
                     $permissionValue = $mapPermission->get($perm);
 
                     $permissions[] = \App\Permission::firstOrCreate([
-                        'name' => $permissionValue . '-' . $module,
+                        'name' => $permissionValue . '_' . $module,
                         'display_name' => ucfirst($permissionValue) . ' ' . ucfirst($module),
                         'description' => ucfirst($permissionValue) . ' ' . ucfirst($module),
                     ])->id;
@@ -72,12 +72,12 @@ class LaratrustSeeder extends Seeder
                 foreach ($modules as $module => $value) {
 
                     // Create default user for each permission set
-                    $user = \App\User::create([
-                        'name' => ucwords(str_replace('_', ' ', $key)),
-                        'email' => $key.'@app.com',
-                        'password' => bcrypt('password'),
-                        'remember_token' => Str::random(10),
-                    ]);
+//                    $user = \App\User::create([
+//                        'name' => ucwords(str_replace('_', ' ', $key)),
+//                        'email' => $key.'@app.com',
+//                        'password' => bcrypt('password'),
+//                        'remember_token' => Str::random(10),
+//                    ]);
                     $permissions = [];
 
                     foreach (explode(',', $value) as $p => $perm) {
@@ -85,7 +85,7 @@ class LaratrustSeeder extends Seeder
                         $permissionValue = $mapPermission->get($perm);
 
                         $permissions[] = \App\Permission::firstOrCreate([
-                            'name' => $permissionValue . '-' . $module,
+                            'name' => $permissionValue . '_' . $module,
                             'display_name' => ucfirst($permissionValue) . ' ' . ucfirst($module),
                             'description' => ucfirst($permissionValue) . ' ' . ucfirst($module),
                         ])->id;
