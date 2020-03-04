@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8bc7f5b9-b9dc-4b2e-a910-02d71eb500fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,15 +45,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="7" />
-          <entry key="php" value="5492" />
-          <entry key="txt" value="1629" />
+          <entry key="php" value="5689" />
+          <entry key="txt" value="1666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="3162" />
-          <entry key="PHP" value="2330" />
-          <entry key="PLAIN_TEXT" value="1636" />
+          <entry key="PHP" value="2527" />
+          <entry key="PLAIN_TEXT" value="1673" />
         </counts>
       </usages-collector>
     </session>
@@ -76,20 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="304">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="133">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -97,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Role.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="513">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -163,11 +164,11 @@
         <option value="$PROJECT_DIR$/config/laratrust_seeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/LaratrustSeeder.php" />
         <option value="$PROJECT_DIR$/routes/dashboard/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" />
-        <option value="$PROJECT_DIR$/app/Role.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/roles/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" />
+        <option value="$PROJECT_DIR$/app/Role.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" />
       </list>
     </option>
   </component>
@@ -374,7 +375,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583069809631</updated>
       <workItem from="1583069812333" duration="27099000" />
-      <workItem from="1583269067751" duration="21311000" />
+      <workItem from="1583269067751" duration="21703000" />
     </task>
     <task id="LOCAL-00001" summary="(2 install dashboard part1)">
       <created>1583073786225</created>
@@ -635,11 +636,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583333395430</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="8(عمل جزئية ظهور الاسم في السايد بار)">
+      <created>1583336347541</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1583336347541</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48410000" />
+    <option name="totallyTimeSpent" value="48802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="871" height="868" extended-state="0" />
@@ -649,7 +657,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.29839703" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.6744186" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.6740638" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50067115" side_tool="true" weight="0.66757864" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32871014" />
@@ -696,7 +704,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="4.6(عمل الفورم الخاص بالكاتيجوري في الاندكس وعدم الإظهار إذا فش داتا)" />
     <MESSAGE value="4.7(عمل زر الإضافة والتأكد من انتقاله لصفحة الكرييت)" />
     <MESSAGE value="4.8(البدء في صفحة الكرييت)" />
     <MESSAGE value="4.9(ترتيب الكرييت وعمل رسالة الخطأ في مجلد لحالو وعملتها استدعاء)" />
@@ -721,7 +728,8 @@
     <MESSAGE value="7.7(عمل الكونترولر الخاص باالرولز + عمل السكوب + عمل الراوت)" />
     <MESSAGE value="7.8(عمل الصفحات الخاصة للرول)" />
     <MESSAGE value="7.9( بعض التنسيقات + عمل جزئية تكبير الحرف في اول الكلمة في اسم اليوزر)" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.9( بعض التنسيقات + عمل جزئية تكبير الحرف في اول الكلمة في اسم اليوزر)" />
+    <MESSAGE value="8(عمل جزئية ظهور الاسم في السايد بار)" />
+    <option name="LAST_COMMIT_MESSAGE" value="8(عمل جزئية ظهور الاسم في السايد بار)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -887,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Role.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/dashboard/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -940,17 +941,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="133">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Role.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="513">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
