@@ -50,9 +50,13 @@ class RoleController extends Controller
     {
         $request->validate([
             'name' => 'required|unique:roles,name,' . $role->id,
+            'permissions' => 'required|array|min:1',
+
         ]);
 
         $role->update($request->all());
+        $role->syncPermissions($request->permissions);
+
         session()->flash('success', 'Data updated successfully');
         return redirect()->route('dashboard.roles.index');
 

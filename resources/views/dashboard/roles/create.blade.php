@@ -22,11 +22,13 @@
 
                     @include('dashboard.partials._errors')
 
+                    {{--name--}}
                     <div class="form-group">
                         <label>Name</label>
                         <input type="text" name="name" class="form-control" value="{{ old('name') }}">
                     </div>
 
+                    {{--permissions--}}
                     <div class="form-group">
                         <h4 style="font-weight:400 ">Permissions</h4>
                         <table class="table table-hover">
