@@ -28,6 +28,59 @@
                     </div>
 
                     <div class="form-group">
+                        <h4>Permissions</h4>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Model</th>
+                                <th>Permissions</th>
+                            </tr>
+                            </thead>
+
+
+                            <tbody>
+                            @php
+
+                                $models = ['categories','users']
+
+                            @endphp
+
+                            @foreach($models as $index=>$model)
+
+                                <tr>
+                                    <td>{{$index+1}}</td>
+                                    <td>{{$model}}</td>
+                                    <td>
+                                        @php
+
+                                            $permissions_maps=['create','read','update','delete']
+
+                                        @endphp
+
+                                        <select name="permissions[]" class="form-control select2" multiple>
+
+
+                                            @foreach($permissions_maps as $permissions_map)
+
+                                                <option value="">{{$permissions_map}}</option>
+
+                                            @endforeach
+
+                                        </select>
+
+                                    </td>
+                                </tr>
+
+                            @endforeach
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+
+                    <div class="form-group">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
                     </div>
 
