@@ -38,4 +38,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-}
+
+
+    //attributes هذه خاصة لتكبير الحرف الأول للكلمة -------------------------------
+
+    public function getNameAttribute($value){
+
+        return ucfirst($value);
+    }
+
+}//end of model
