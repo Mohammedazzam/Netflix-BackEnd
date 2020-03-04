@@ -6,7 +6,7 @@ return [
             'users' => 'c,r,u,d',
             'categories' => 'c,r,u,d',
         ],
-        'admin' => [],
+        'admin' => [], //roles --> uploader, author, writer, reviewer
         'user' => [],
     ],
     'permission_structure' => [
