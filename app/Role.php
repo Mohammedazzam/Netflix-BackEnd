@@ -23,7 +23,9 @@ class Role extends LaratrustRole
 //scopes هذه وظيفتها بتجيب كل الرول ما عدا رول معينة---------------------------
     public function scopeWhereRoleNot($query , $role_name){
 
-        return $query->where('name','!=',$role_name);
+//        return $query->where('name','!=',$role_name);
+        return $query->whereNotIn('name',(array)$role_name); //هذه لو كان هنالك أكثر من رول بدي استثنيها
+
 
     }//end of scopeWhereRoleNot
 

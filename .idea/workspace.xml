@@ -45,15 +45,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="7" />
-          <entry key="php" value="5689" />
-          <entry key="txt" value="1666" />
+          <entry key="php" value="5769" />
+          <entry key="txt" value="1726" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="3162" />
-          <entry key="PHP" value="2527" />
-          <entry key="PLAIN_TEXT" value="1673" />
+          <entry key="PHP" value="2607" />
+          <entry key="PLAIN_TEXT" value="1733" />
         </counts>
       </usages-collector>
     </session>
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="171">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -90,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Role.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="361">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -117,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -375,7 +375,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583069809631</updated>
       <workItem from="1583069812333" duration="27099000" />
-      <workItem from="1583269067751" duration="21703000" />
+      <workItem from="1583269067751" duration="23158000" />
     </task>
     <task id="LOCAL-00001" summary="(2 install dashboard part1)">
       <created>1583073786225</created>
@@ -643,11 +643,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583336347541</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="8(عمل استثناء لرول معينة عبر استخدام سكووب قمت باستثناء super_admin)">
+      <created>1583336733784</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1583336733784</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48802000" />
+    <option name="totallyTimeSpent" value="50257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="871" height="868" extended-state="0" />
@@ -704,7 +711,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="4.7(عمل زر الإضافة والتأكد من انتقاله لصفحة الكرييت)" />
     <MESSAGE value="4.8(البدء في صفحة الكرييت)" />
     <MESSAGE value="4.9(ترتيب الكرييت وعمل رسالة الخطأ في مجلد لحالو وعملتها استدعاء)" />
     <MESSAGE value="4.10(الانتهاء من التنسيق النهائي وحذف الملفات الغير مهمة في ال app)" />
@@ -729,7 +735,8 @@
     <MESSAGE value="7.8(عمل الصفحات الخاصة للرول)" />
     <MESSAGE value="7.9( بعض التنسيقات + عمل جزئية تكبير الحرف في اول الكلمة في اسم اليوزر)" />
     <MESSAGE value="8(عمل جزئية ظهور الاسم في السايد بار)" />
-    <option name="LAST_COMMIT_MESSAGE" value="8(عمل جزئية ظهور الاسم في السايد بار)" />
+    <MESSAGE value="8(عمل استثناء لرول معينة عبر استخدام سكووب قمت باستثناء super_admin)" />
+    <option name="LAST_COMMIT_MESSAGE" value="8(عمل استثناء لرول معينة عبر استخدام سكووب قمت باستثناء super_admin)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -905,22 +912,7 @@
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#50#67#0#PHP" expanded="true" />
-            <element signature="e#388#473#0#PHP" />
-            <element signature="e#495#811#0#PHP" />
-            <element signature="e#832#956#0#PHP" />
-            <element signature="e#975#1338#0#PHP" />
-            <element signature="e#1360#1570#0#PHP" />
-          </folding>
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -941,24 +933,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Role.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Role.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="133">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#50#67#0#PHP" expanded="true" />
+            <element signature="e#388#473#0#PHP" />
+            <element signature="e#495#811#0#PHP" />
+            <element signature="e#832#956#0#PHP" />
+            <element signature="e#975#1338#0#PHP" />
+            <element signature="e#1360#1570#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="171">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
