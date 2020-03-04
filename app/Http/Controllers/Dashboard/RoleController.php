@@ -28,10 +28,12 @@ class RoleController extends Controller
     public function store(Request $request){
         $request->validate([
             'name' => 'required|unique:roles,name',
+            'permissions' => 'required|array|min:1',
 
         ]);
 
-        Role::create($request->all());
+        $role= Role::create($request->all());
+        $role->attachPermissions($request->permissions);
         session()->flash('success','data added successfully');
         return redirect()->route('dashboard.roles.index');
 

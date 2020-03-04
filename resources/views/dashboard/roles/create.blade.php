@@ -28,12 +28,12 @@
                     </div>
 
                     <div class="form-group">
-                        <h4>Permissions</h4>
+                        <h4 style="font-weight:400 ">Permissions</h4>
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Model</th>
+                                <th style="width: 5%">#</th>
+                                <th style="width: 15%">Model</th>
                                 <th>Permissions</th>
                             </tr>
                             </thead>
@@ -63,7 +63,7 @@
 
                                             @foreach($permissions_maps as $permissions_map)
 
-                                                <option value="">{{$permissions_map}}</option>
+                                                <option value="{{$permissions_map. '_' . $model}}">{{$permissions_map}}</option>
 
                                             @endforeach
 
