@@ -3,12 +3,12 @@
 @section('content')
 
     <div>
-        <h2>Categories</h2>
+        <h2>Role</h2>
     </div>
 
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('dashboard.welcome') }}">Dashboard</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('dashboard.categories.index') }}">Categories</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('dashboard.roles.index') }}">Role</a></li>
         <li class="breadcrumb-item active">Edit</li>
     </ul>
 
@@ -16,7 +16,7 @@
         <div class="col-md-12">
             <div class="tile mb-4">
 
-                <form method="post" action="{{ route('dashboard.categories.update',$category->id) }}">
+                <form method="post" action="{{ route('dashboard.roles.update',$category->id) }}">
                     @csrf
                     @method('put')
 
