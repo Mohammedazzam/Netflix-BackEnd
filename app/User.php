@@ -47,4 +47,27 @@ class User extends Authenticatable
         return ucfirst($value);
     }
 
+    //scopes---------------بدي اجيب اليوزرز الي معهم رول معينة-----------------------
+    public function scopeWhereRole($query, $role_name)
+    {
+        return $query->whereHas('roles',function ($q) use ($role_name){  //الناس الي عندها رولز اعمل لها فانكشن وهذه الفانكشن بتاخد كويري
+
+            return $q->whereIn('name',(array)$role_name);
+
+        });
+
+
+    }//enf of scopeWhereRole
+
+
+    public function scopeWhereRoleNot($query,$role_name){
+
+        return $query->whereHas('roles',function ($q) use ($role_name){  //الناس الي عندها رولز اعمل لها فانكشن وهذه الفانكشن بتاخد كويري
+
+            return $q->whereNotIn('name',(array)$role_name);
+
+        });
+
+    }//enf of scopeWhereRoleNot
+
 }//end of model
