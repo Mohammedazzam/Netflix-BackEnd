@@ -47,7 +47,8 @@
                         <tr>
                             <th>#</th>
                             <th>Name</th>
-                            <th>Action</th>
+                            <th>Email</th>
+                            <th>Role</th>
                         </tr>
                         </thead>
 
@@ -56,6 +57,8 @@
                                 <tr>
                                     <td>{{$index+1}}</td>
                                     <td>{{$user->name}}</td>
+                                    <td>{{$user->email}}</td>
+                                    <td>{{implode(',',$user->roles->pluck('name')->toArray()) }}</td>
                                     <td>
                                         <a href="{{route('dashboard.users.edit',$user->id)}}" class="btn btn-warning  btn-sm"><i class="fa fa-edit"></i>Edit</a>
                                         <form method="post" action="{{route('dashboard.users.destroy',$user->id)}}" style="display: inline-block">
