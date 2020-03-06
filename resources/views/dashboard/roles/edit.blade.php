@@ -66,12 +66,11 @@
 
                                             @foreach($permissions_maps as $permissions_map)
 
-                                                <option
-                                                        value="{{$permissions_map. '_' . $model}}"
-                                                        {{$role->hasPermission($permissions_map .'_'. $model) ? 'selected':''}}
-                                                >
+                                                <option value="{{$permissions_map. '_' . $model}}"{{$role->hasPermission($permissions_map .'_'. $model) ? 'selected':''}}>
 
-                                                    {{$permissions_map}}</option>
+                                                    {{$permissions_map}}
+
+                                                </option>
 
                                             @endforeach
 

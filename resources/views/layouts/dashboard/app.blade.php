@@ -11,6 +11,10 @@
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard_files/css/main.css')}}">
 
+
+    {{--jquery--}}
+    <script src="{{asset('dashboard_files/js/jquery-3.3.1.min.js')}}"></script>
+
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -43,7 +47,6 @@
 
 </main>
 <!-- Essential javascripts for application to work-->
-<script src="{{asset('dashboard_files/js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{asset('dashboard_files/js/popper.min.js')}}"></script>
 <script src="{{asset('dashboard_files/js/bootstrap.min.js')}}"></script>
 
@@ -71,12 +74,15 @@
             n.show();
         });
 
-        //select2
-        $('.select2').select2({
-            width:'100%'
-        });
 
     });//end of document ready
+
+
+    //select2
+    $('.select2').select2({
+        width:'100%'
+    });
+
 </script>
 
 
