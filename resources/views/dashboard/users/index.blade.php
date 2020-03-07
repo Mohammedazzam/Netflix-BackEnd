@@ -30,6 +30,8 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <select name="role_id" class="form-control">
+
+                                    <option value="">All Roles</option>
                                     @foreach($roles as $role)
 
                                         <option value="{{$role->id}}">{{$role->name}}</option>

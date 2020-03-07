@@ -61,26 +61,30 @@ class User extends Authenticatable
 
 
 
+    public function scopeWhenRole($query, $role_id)
+    {
+        return $query->when($role_id, function ($q) use ($role_id) {
+            return $this->scopeWhereRole($q, $role_id);
+        });
+
+    }// end of scopeWhenRole
+
     public function scopeWhereRole($query, $role_name)
     {
-        return $query->whereHas('roles',function ($q) use ($role_name){  //الناس الي عندها رولز اعمل لها فانكشن وهذه الفانكشن بتاخد كويري
-
-            return $q->whereIn('name',(array)$role_name);
-
+        return $query->whereHas('roles', function ($q) use ($role_name) {
+            return $q->whereIn('name', (array)$role_name)
+                ->orWhereIn('id', (array)$role_name);
         });
 
+    }// end of scopeWhereRole
 
-    }//enf of scopeWhereRole
-
-
-    public function scopeWhereRoleNot($query,$role_name){
-
-        return $query->whereHas('roles',function ($q) use ($role_name){  //الناس الي عندها رولز اعمل لها فانكشن وهذه الفانكشن بتاخد كويري
-
-            return $q->whereNotIn('name',(array)$role_name);
-
+    public function scopeWhereRoleNot($query, $role_name)
+    {
+        return $query->whereHas('roles', function ($q) use ($role_name) {
+            return $q->whereNotIn('name', (array)$role_name)
+                ->whereNotIn('id', (array)$role_name);
         });
 
-    }//enf of scopeWhereRoleNot
+    }// end of scopeWhereRoleNot
 
 }//end of model

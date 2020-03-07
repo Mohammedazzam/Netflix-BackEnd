@@ -16,6 +16,7 @@ class UserController extends Controller
 
         $users = User::whereRoleNot('super_admin')
             ->whenSearch(request()->search)
+            ->whenRole(request()->role_id)
             ->with('roles') //عملت هذه لتقلييل الكويري
             ->paginate(5);//        $users = User::WhereRole('super_admin')->paginate(5);
 
