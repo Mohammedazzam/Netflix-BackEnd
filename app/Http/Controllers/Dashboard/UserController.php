@@ -40,6 +40,7 @@ class UserController extends Controller
 
         $user = User::create($request->all());
         $user->attachRole($request->role_id);
+//        $user->attachRoles(['admin',$request->role_id]); //ما زبطت
 
         session()->flash('success', 'Data added successfully');
         return redirect()->route('dashboard.users.index');
