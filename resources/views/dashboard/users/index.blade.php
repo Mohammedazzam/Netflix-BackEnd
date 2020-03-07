@@ -43,7 +43,13 @@
 
                         <div class="col-md-4">
                             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Search</button>
-                            <a href="{{route('dashboard.users.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i>Add</a>
+                            @if(auth()->user()->hasPermission('create_users'))
+                                <a href="{{route('dashboard.users.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i>Add</a>
+
+                            @else
+                                <a href="#" disabled class="btn btn-primary"><i class="fa fa-plus"></i>Add</a>
+
+                            @endif
                         </div>
                     </div><!--end of row-->
 
@@ -78,13 +84,25 @@
                                             <h5 style="display: inline-block"><span class="badge badge-primary">{{$role->name}}</span></h5>
                                         @endforeach
                                     <td>
-                                        <a href="{{route('dashboard.users.edit',$user->id)}}" class="btn btn-warning  btn-sm"><i class="fa fa-edit"></i>Edit</a>
-                                        <form method="post" action="{{route('dashboard.users.destroy',$user->id)}}" style="display: inline-block">
-                                            @csrf
-                                            @method('delete')
+                                        @if(auth()->user()->hasPermission('update_users'))
+                                            <a href="{{route('dashboard.users.edit',$user->id)}}" class="btn btn-warning  btn-sm"><i class="fa fa-edit"></i>Edit</a>
 
-                                            <button type="submit" class="btn btn-danger btn-sm delete"><i class="fa fa-trash"></i>Delete</button>
-                                        </form><!--end of form-->
+                                        @else
+                                            <a href="#" disabled class="btn btn-warning  btn-sm"><i class="fa fa-edit"></i>Edit</a>
+
+                                        @endif
+
+                                        @if(auth()->user()->hasPermission('delete_users'))
+                                                <form method="post" action="{{route('dashboard.users.destroy',$user->id)}}" style="display: inline-block">
+                                                    @csrf
+                                                    @method('delete')
+
+                                                    <button type="submit" class="btn btn-danger btn-sm delete"><i class="fa fa-trash"></i>Delete</button>
+                                                </form><!--end of form-->
+                                            @else
+                                                <a href="#" disabled class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>Delete</a>
+                                        @endif
+
                                     </td>
                                 </tr>
                             @endforeach
