@@ -12,7 +12,10 @@ class UserController extends Controller
 
     public function index(){
 
-        $users = User::whereRoleNot('super_admin')->whenSearch(request()->search)->paginate(5);//        $users = User::WhereRole('super_admin')->paginate(5);
+        $users = User::whereRoleNot('super_admin')
+            ->whenSearch(request()->search)
+            ->with('roles') //عملت هذه لتقلييل الكويري
+            ->paginate(5);//        $users = User::WhereRole('super_admin')->paginate(5);
 
         return view('dashboard.users.index',compact('users'));
 
