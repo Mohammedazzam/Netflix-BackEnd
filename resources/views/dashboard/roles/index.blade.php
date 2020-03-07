@@ -48,6 +48,7 @@
                             <th>#</th>
                             <th>Name</th>
                             <th>Permissions</th>
+                            <th>Users Count</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -62,6 +63,9 @@
                                             <h5 style="display: inline-block"><span class="badge badge-primary">{{$permission->name}}</span></h5>
                                         @endforeach
                                     </td>
+
+                                    <td>{{$role->users_count}}</td>
+
                                     <td>
                                         <a href="{{route('dashboard.roles.edit',$role->id)}}" class="btn btn-warning  btn-sm"><i class="fa fa-edit"></i>Edit</a>
                                         <form method="post" action="{{route('dashboard.roles.destroy',$role->id)}}" style="display: inline-block">

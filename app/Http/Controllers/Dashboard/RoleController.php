@@ -14,6 +14,7 @@ class RoleController extends Controller
         $roles = Role::WhereRoleNot('super_admin')
             ->whenSearch(request()->search)
             ->with('permissions')
+            ->withCount('users')
             ->paginate(5);
 //        $roles = Role::WhereRoleNot(['super_admin','admin','user'])->whenSearch(request()->search)->paginate(5);
 
