@@ -11,7 +11,10 @@ class RoleController extends Controller
 
     public function index(){
 
-        $roles = Role::WhereRoleNot('super_admin')->whenSearch(request()->search)->paginate(5);
+        $roles = Role::WhereRoleNot('super_admin')
+            ->whenSearch(request()->search)
+            ->with('permissions')
+            ->paginate(5);
 //        $roles = Role::WhereRoleNot(['super_admin','admin','user'])->whenSearch(request()->search)->paginate(5);
 
         return view('dashboard.roles.index',compact('roles'));
