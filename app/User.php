@@ -48,6 +48,19 @@ class User extends Authenticatable
     }
 
     //scopes---------------بدي اجيب اليوزرز الي معهم رول معينة-----------------------
+
+
+    //هذه خاصة بجزئية السيرش في اليوزر
+    public function scopeWhenSearch($query, $search)
+    {
+        return $query->when($search, function ($q) use ($search) {
+            return $q->where('name', 'like', "%$search%");
+        });
+
+    }// end of scopeWhenSearch
+
+
+
     public function scopeWhereRole($query, $role_name)
     {
         return $query->whereHas('roles',function ($q) use ($role_name){  //الناس الي عندها رولز اعمل لها فانكشن وهذه الفانكشن بتاخد كويري
