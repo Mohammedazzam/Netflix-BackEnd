@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bc7f5b9-b9dc-4b2e-a910-02d71eb500fc" name="Default Changelist" comment="10.4(بدي اجيب اليوزرز الي معهم رول معينة)">
+    <list default="true" id="8bc7f5b9-b9dc-4b2e-a910-02d71eb500fc" name="Default Changelist" comment="10.6(عمل استثناء للرولز التي ستظهر عند إنشاء يوزر)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,7 @@
           <entry key="css" value="1" />
           <entry key="env" value="1" />
           <entry key="js" value="1" />
-          <entry key="php" value="97" />
+          <entry key="php" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -38,33 +38,33 @@
           <entry key="Blade" value="57" />
           <entry key="CSS" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="40" />
+          <entry key="PHP" value="44" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="7" />
-          <entry key="php" value="7494" />
-          <entry key="txt" value="2165" />
+          <entry key="php" value="7868" />
+          <entry key="txt" value="2239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="4243" />
-          <entry key="PHP" value="3251" />
-          <entry key="PLAIN_TEXT" value="2172" />
+          <entry key="PHP" value="3625" />
+          <entry key="PLAIN_TEXT" value="2246" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+            <state relative-caret-position="247">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#50#86#0#PHP" expanded="true" />
               </folding>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="53" column="44" lean-forward="true" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            <state relative-caret-position="218">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -150,8 +150,8 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" />
       </list>
     </option>
   </component>
@@ -285,28 +285,13 @@
             <path>
               <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
               <item name="mynet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
               <item name="mynet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mynet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mynet" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,21 +344,7 @@
       <workItem from="1583069812333" duration="27099000" />
       <workItem from="1583269067751" duration="28064000" />
       <workItem from="1583529070262" duration="4381000" />
-      <workItem from="1583577652930" duration="1691000" />
-    </task>
-    <task id="LOCAL-00001" summary="(2 install dashboard part1)">
-      <created>1583073786225</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1583073786226</updated>
-    </task>
-    <task id="LOCAL-00002" summary="(3 install dashboard part2هذه بمعنى أنني قمت بعمل كونترولر خاص باللوحة)">
-      <created>1583074137036</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1583074137036</updated>
+      <workItem from="1583577652930" duration="4601000" />
     </task>
     <task id="LOCAL-00003" summary="( قمت بتعريف وإنشاء راوت جديد كما وقمت بإنشاء كونترولر)3.2">
       <created>1583077534743</created>
@@ -704,11 +675,25 @@
       <option name="project" value="LOCAL" />
       <updated>1583532829442</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="10.5(عمل جزئية الكرييت ليوزر)">
+      <created>1583579387554</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1583579387555</updated>
+    </task>
+    <task id="LOCAL-00051" summary="10.6(عمل استثناء للرولز التي ستظهر عند إنشاء يوزر)">
+      <created>1583580464657</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1583580464657</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61235000" />
+    <option name="totallyTimeSpent" value="64145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="872" height="868" extended-state="0" />
@@ -716,9 +701,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.30295566" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.3004926" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.40360612" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.40360612" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50067115" side_tool="true" weight="0.66757864" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32871014" />
@@ -765,8 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="6.2(عمل جزئية الباجيناشين)" />
-    <MESSAGE value="6.3(عمل ال search وتطبيق مفهوم السكوووب)" />
     <MESSAGE value="6.4(اظهار الأكشن المدخل في السيرش في ال url)" />
     <MESSAGE value="6.5(تنسيقات بسيطة)" />
     <MESSAGE value="7(تحميل ال laravel-debugbar)" />
@@ -790,18 +773,9 @@
     <MESSAGE value="10.2(عمل كونترولر لليوزر ونسخ كامل الفيوهات في الرول لليوزر)" />
     <MESSAGE value="10.3(عمل الراوت مع بعض التعديلات في صفحة العرض لليوزر لعرض الرول)" />
     <MESSAGE value="10.4(بدي اجيب اليوزرز الي معهم رول معينة)" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.4(بدي اجيب اليوزرز الي معهم رول معينة)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="10.5(عمل جزئية الكرييت ليوزر)" />
+    <MESSAGE value="10.6(عمل استثناء للرولز التي ستظهر عند إنشاء يوزر)" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.6(عمل استثناء للرولز التي ستظهر عند إنشاء يوزر)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -916,24 +890,10 @@
         <state relative-caret-position="-1482" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/laratrust_seeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/LaratrustSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1046,20 +1006,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-end-line="16" />
-          <folding>
-            <element signature="e#50#86#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="218">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/laratrust_seeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="53" column="44" lean-forward="true" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/LaratrustSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="97" column="30" lean-forward="true" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#50#86#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

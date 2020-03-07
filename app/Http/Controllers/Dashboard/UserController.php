@@ -25,19 +25,23 @@ class UserController extends Controller
         $roles = Role::whereRoleNot(['super_admin', 'admin'])->get();
         return view('dashboard.users.create', compact('roles'));
 
-    }//end of createF
+    }//end of create
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $request->validate([
-            'name' => 'required|unique:users,name',
-            'permissions' => 'required|array|min:1',
-
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|confirmed',
+            'role_id' => 'required|numeric',
         ]);
 
+        $request->merge(['password' => bcrypt($request->password)]);
 
-        $user= User::create($request->all());
-        $user->attachPermissions($request->permissions);
-        session()->flash('success','data added successfully');
+        $user = User::create($request->all());
+        $user->attachRole($request->role_id);
+
+        session()->flash('success', 'Data added successfully');
         return redirect()->route('dashboard.users.index');
 
     }//end of store
