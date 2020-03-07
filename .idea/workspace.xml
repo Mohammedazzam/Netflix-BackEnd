@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bc7f5b9-b9dc-4b2e-a910-02d71eb500fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/roles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,15 +45,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="7" />
-          <entry key="php" value="8614" />
-          <entry key="txt" value="2423" />
+          <entry key="php" value="8712" />
+          <entry key="txt" value="2483" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="4489" />
-          <entry key="PHP" value="4125" />
-          <entry key="PLAIN_TEXT" value="2430" />
+          <entry key="Blade" value="4568" />
+          <entry key="PHP" value="4144" />
+          <entry key="PLAIN_TEXT" value="2490" />
         </counts>
       </usages-collector>
     </session>
@@ -74,20 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="60" column="26" selection-start-line="24" selection-start-column="19" selection-end-line="60" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="294">
+              <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -105,22 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="e#2231#2260#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#506#586#0#PHP" />
                 <element signature="e#608#1028#0#PHP" />
@@ -128,18 +105,6 @@
                 <element signature="e#1175#1622#0#PHP" />
                 <element signature="e#1261#1391#1#PHP" />
                 <element signature="e#1644#1837#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-              <folding>
-                <element signature="e#2187#2216#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,7 +161,6 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" />
         <option value="$PROJECT_DIR$/routes/dashboard/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" />
         <option value="$PROJECT_DIR$/config/laratrust_seeder.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
@@ -204,6 +168,7 @@
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/roles/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" />
       </list>
     </option>
   </component>
@@ -411,21 +376,7 @@
       <workItem from="1583069812333" duration="27099000" />
       <workItem from="1583269067751" duration="28064000" />
       <workItem from="1583529070262" duration="4381000" />
-      <workItem from="1583577652930" duration="11439000" />
-    </task>
-    <task id="LOCAL-00009" summary="4.3(عمل بنية الفيو للكاتيجوري)">
-      <created>1583106641241</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1583106641241</updated>
-    </task>
-    <task id="LOCAL-00010" summary="4.4(عمل الكونترولر والراوت +عمل باقي التنسيق للكايجوري+ عمل الاندكس )">
-      <created>1583242174932</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1583242174932</updated>
+      <workItem from="1583577652930" duration="11889000" />
     </task>
     <task id="LOCAL-00011" summary="4.5(عمل الأزرار في صفحة الإندكس للكاتيجوري)">
       <created>1583243433639</created>
@@ -756,11 +707,25 @@
       <option name="project" value="LOCAL" />
       <updated>1583593303110</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="11.5(استخدمت ال with للرولز كمان)">
+      <created>1583593747335</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1583593747335</updated>
+    </task>
+    <task id="LOCAL-00059" summary="11.6(لإظهار ال users Count)">
+      <created>1583593910127</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1583593910127</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70983000" />
+    <option name="totallyTimeSpent" value="71433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="872" height="868" extended-state="0" />
@@ -768,7 +733,7 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.3004926" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3004926" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.39808482" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -817,8 +782,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="7.5(إضافة السيدر)" />
-    <MESSAGE value="7.6(عمل ميديل وير + ترتيب الكود)" />
     <MESSAGE value="7.7(عمل الكونترولر الخاص باالرولز + عمل السكوب + عمل الراوت)" />
     <MESSAGE value="7.8(عمل الصفحات الخاصة للرول)" />
     <MESSAGE value="7.9( بعض التنسيقات + عمل جزئية تكبير الحرف في اول الكلمة في اسم اليوزر)" />
@@ -842,7 +805,9 @@
     <MESSAGE value="11.2(عمل جزئية السيرش في اليوزر واستخدام السكوب)" />
     <MESSAGE value="11.3(ترتيب بعض التنسيقات)" />
     <MESSAGE value="11.4(وظيفة ال with لتقليل الكويري)" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.4(وظيفة ال with لتقليل الكويري)" />
+    <MESSAGE value="11.5(استخدمت ال with للرولز كمان)" />
+    <MESSAGE value="11.6(لإظهار ال users Count)" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.6(لإظهار ال users Count)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -1049,20 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="60" column="26" selection-start-line="24" selection-start-column="19" selection-end-line="60" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -1096,7 +1047,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/RoleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#506#586#0#PHP" />
             <element signature="e#608#1028#0#PHP" />
@@ -1110,11 +1061,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        <state relative-caret-position="75">
+          <caret line="51" column="11" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
           <folding>
             <element signature="e#2187#2216#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
         </state>
       </provider>
     </entry>

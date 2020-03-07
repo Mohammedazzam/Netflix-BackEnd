@@ -58,6 +58,9 @@
                                 <option value="{{$role->id}}"> {{$role->name}}</option>
                             @endforeach
                         </select>
+
+                        <a href="{{route('dashboard.roles.create')}}">Create new role</a>
+
                     </div>
 
 
