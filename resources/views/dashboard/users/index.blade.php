@@ -34,7 +34,7 @@
                                     <option value="">All Roles</option>
                                     @foreach($roles as $role)
 
-                                        <option value="{{$role->id}}">{{$role->name}}</option>
+                                        <option value="{{ $role->id }}" {{ request()->role_id == $role->id ? 'selected' : '' }}>{{ $role->name }}</option>
 
                                     @endforeach
                                 </select>
