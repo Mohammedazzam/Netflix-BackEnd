@@ -28,57 +28,36 @@
                         <input type="text" name="name" class="form-control" value="{{ old('name') }}">
                     </div>
 
-                    {{--permissions--}}
+
+                    {{--email--}}
                     <div class="form-group">
-                        <h4 style="font-weight:400 ">Permissions</h4>
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th style="width: 5%">#</th>
-                                <th style="width: 15%">Model</th>
-                                <th>Permissions</th>
-                            </tr>
-                            </thead>
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" value="{{ old('email') }}">
+                    </div>
 
 
-                            <tbody>
-                            @php
-
-                                $models = ['categories','users']
-
-                            @endphp
-
-                            @foreach($models as $index=>$model)
-
-                                <tr>
-                                    <td>{{$index+1}}</td>
-                                    <td>{{$model}}</td>
-                                    <td>
-                                        @php
-
-                                            $permissions_maps=['create','read','update','delete']
-
-                                        @endphp
-
-                                        <select name="permissions[]" class="form-control select2" multiple>
+                    {{--password--}}
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control">
+                    </div>
 
 
-                                            @foreach($permissions_maps as $permissions_map)
+                    {{--password--}}
+                    <div class="form-group">
+                        <label>Password Confirmation</label>
+                        <input type="password" name="password_confirmation" class="form-control">
+                    </div>
 
-                                                <option value="{{$permissions_map. '_' . $model}}">{{$permissions_map}}</option>
 
-                                            @endforeach
-
-                                        </select>
-
-                                    </td>
-                                </tr>
-
+                    {{--roles--}}
+                    <div class="form-group">
+                        <label>Roles</label>
+                        <select name="role_id" class="form-control">
+                            @foreach($roles as $role)
+                                <option value="{{$role->id}}"> {{$role->name}}</option>
                             @endforeach
-
-                            </tbody>
-
-                        </table>
+                        </select>
                     </div>
 
 
