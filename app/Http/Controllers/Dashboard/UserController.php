@@ -50,23 +50,24 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
-        return view('dashboard.users.edit', compact('user'));
+        $roles = Role::whereRoleNot(['super_admin', 'admin'])->get();
+        return view('dashboard.users.edit',compact('user','roles'));
 
     }//end of edit
 
     public function update(Request $request, User $user)
     {
         $request->validate([
-            'name' => 'required|unique:users,name,' . $user->id,
-            'permissions' => 'required|array|min:1',
-
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,' . $user->id,
+            'role_id' => 'required|numeric',
         ]);
 
         $user->update($request->all());
-        $user->syncPermissions($request->permissions);
+        $user->syncRoles(['admin', $request->role_id]);
 
         session()->flash('success', 'Data updated successfully');
-        return redirect()->route('dashboard.Users.index');
+        return redirect()->route('dashboard.users.index');
 
     }//end of update
 
