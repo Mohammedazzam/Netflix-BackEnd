@@ -28,6 +28,18 @@
                         </div><!--end of col-->
 
                         <div class="col-md-4">
+                            <div class="form-group">
+                                <select name="role_id" class="form-control">
+                                    @foreach($roles as $role)
+
+                                        <option value="{{$role->id}}">{{$role->name}}</option>
+
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div><!--end of col-->
+
+                        <div class="col-md-4">
                             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Search</button>
                             <a href="{{route('dashboard.users.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i>Add</a>
                         </div>
