@@ -6,6 +6,7 @@ return [
             'categories' => 'c,r,u,d',
             'roles' => 'c,r,u,d',
             'users' => 'c,r,u,d',
+            'settings' => 'c,r,u,d',
         ],
         'admin' => [], //roles --> uploader, author, writer, reviewer
         'user' => [],
