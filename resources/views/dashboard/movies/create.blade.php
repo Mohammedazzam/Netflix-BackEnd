@@ -17,13 +17,19 @@
             <div class="tile mb-4">
 
                 <div class="d-flex justify-content-center align-items-center flex-column"
-                     style="height: 25vh; border: 1px solid black">
+                     style="height: 25vh; border: 1px solid black; cursor: pointer;"
+
+                     onclick="document.getElementById('movie__file-input').click()"
+
+                >
 
                     <i class="fa fa-video-camera fa-2x"></i>
 
                     <p>Click To Upload</p>
 
                 </div>
+
+                <input type="file" name="" id="movie__file-input" style="display: none">
 
                 <form method="post" action="{{ route('dashboard.movies.store') }}">
                     @csrf
