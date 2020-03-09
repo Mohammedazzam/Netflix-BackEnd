@@ -44,7 +44,7 @@
                             <tbody>
                             @php
 
-                                $models = ['categories','users']
+                                $models = ['categories','movies','users','settings'] //هذه خاصة للإضافة في الرولز
 
                             @endphp
 
@@ -52,7 +52,7 @@
 
                                 <tr>
                                     <td>{{$index+1}}</td>
-                                    <td>{{$model}}</td>
+                                    <td class="text-capitalize">{{$model}}</td>
                                     <td>
                                         @php
 

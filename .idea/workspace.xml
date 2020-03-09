@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bc7f5b9-b9dc-4b2e-a910-02d71eb500fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/dashboard/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,31 +32,31 @@
           <entry key="env" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="3" />
-          <entry key="php" value="147" />
+          <entry key="php" value="150" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="78" />
+          <entry key="Blade" value="79" />
           <entry key="CSS" value="1" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="69" />
+          <entry key="PHP" value="71" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="7" />
-          <entry key="php" value="11878" />
-          <entry key="txt" value="3420" />
+          <entry key="php" value="12097" />
+          <entry key="txt" value="3504" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="5894" />
-          <entry key="PHP" value="5984" />
-          <entry key="PLAIN_TEXT" value="3427" />
+          <entry key="Blade" value="5959" />
+          <entry key="PHP" value="6138" />
+          <entry key="PLAIN_TEXT" value="3511" />
         </counts>
       </usages-collector>
     </session>
@@ -80,14 +77,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="58">
               <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#50#86#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_195256_create_movies_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/laratrust_seeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -179,7 +203,6 @@
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/LaratrustSeeder.php" />
         <option value="$PROJECT_DIR$/app/Role.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" />
@@ -205,8 +228,10 @@
         <option value="$PROJECT_DIR$/resources/views/dashboard/movies/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" />
         <option value="$PROJECT_DIR$/routes/dashboard/web.php" />
-        <option value="$PROJECT_DIR$/config/laratrust_seeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_09_195256_create_movies_table.php" />
+        <option value="$PROJECT_DIR$/config/laratrust_seeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" />
       </list>
     </option>
   </component>
@@ -350,7 +375,28 @@
             <path>
               <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
               <item name="mynet" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mynet" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mynet" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mynet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mynet" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -415,21 +461,7 @@
       <workItem from="1583269067751" duration="28064000" />
       <workItem from="1583529070262" duration="4381000" />
       <workItem from="1583577652930" duration="32777000" />
-      <workItem from="1583779135985" duration="5176000" />
-    </task>
-    <task id="LOCAL-00032" summary="7.4(ترتيب Laratrust وعمل بعض الاضافات فيها كما وتم إنشاء سييدر)">
-      <created>1583321736200</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1583321736200</updated>
-    </task>
-    <task id="LOCAL-00033" summary="7.5(إضافة السيدر)">
-      <created>1583322496800</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1583322496800</updated>
+      <workItem from="1583779135985" duration="5861000" />
     </task>
     <task id="LOCAL-00034" summary="7.6(عمل ميديل وير + ترتيب الكود)">
       <created>1583330814816</created>
@@ -760,11 +792,25 @@
       <option name="project" value="LOCAL" />
       <updated>1583785356663</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="16.4(تعديل الكونترولر واضافة الموفي في السايد وعمل الراوت)">
+      <created>1583787482813</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1583787482813</updated>
+    </task>
+    <task id="LOCAL-00082" summary="16.5(إضافة الحقول للداتا)">
+      <created>1583787955902</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1583787955902</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97497000" />
+    <option name="totallyTimeSpent" value="98182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="872" height="868" extended-state="0" />
@@ -774,7 +820,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.4224138" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.66574204" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.36615813" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50067115" side_tool="true" weight="0.66757864" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32871014" />
@@ -799,8 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.3(ترتيب بعض التنسيقات)" />
-    <MESSAGE value="11.4(وظيفة ال with لتقليل الكويري)" />
     <MESSAGE value="11.5(استخدمت ال with للرولز كمان)" />
     <MESSAGE value="11.6(لإظهار ال users Count)" />
     <MESSAGE value="11.7(عمل جزئية إضافة رولز جديدة من خلال ال create لليوزر)" />
@@ -824,16 +868,11 @@
     <MESSAGE value="16(إنشاء ال rout + controller + model + migrate لل movie)" />
     <MESSAGE value="16.2(عمل كل ما يختص بالفيوهات )" />
     <MESSAGE value="16.3(عملت الكونترولر للموفي نفس تبع الرولز ولكن بعض التغيرات )" />
-    <option name="LAST_COMMIT_MESSAGE" value="16.3(عملت الكونترولر للموفي نفس تبع الرولز ولكن بعض التغيرات )" />
+    <MESSAGE value="16.4(تعديل الكونترولر واضافة الموفي في السايد وعمل الراوت)" />
+    <MESSAGE value="16.5(إضافة الحقول للداتا)" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.5(إضافة الحقول للداتا)" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/WelcomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -928,13 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1161,13 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/laratrust_seeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/dashboard/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1177,11 +1202,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="58">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#50#86#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_195256_create_movies_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/laratrust_seeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
         </state>
       </provider>
     </entry>
