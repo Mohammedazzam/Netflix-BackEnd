@@ -13,6 +13,9 @@ Route::prefix('dashboard')
     //category routes
     Route::resource('categories','CategoryController')->except(['show']);
 
+    //movie routes
+    Route::resource('movies','MovieController')->exept(['show']);
+
     //role routes
     Route::resource('roles','RoleController')->except(['show']);
 
