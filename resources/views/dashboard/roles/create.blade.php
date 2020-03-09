@@ -48,6 +48,7 @@
 
                             @endphp
 
+
                             @foreach($models as $index=>$model)
 
                                 <tr>
@@ -59,6 +60,14 @@
                                             $permissions_maps=['create','read','update','delete']
 
                                         @endphp
+
+                                        @if($model == 'settings')
+
+                                            @php
+                                                $permissions_maps  =['create','read'];
+                                            @endphp
+
+                                        @endif
 
                                         <select name="permissions[]" class="form-control select2" multiple>
 
