@@ -83,7 +83,7 @@
 
                                         @endif
 
-                                        @if(auth()->user()->hasPermission('delete_roles')))
+                                        @if(auth()->user()->hasPermission('delete_roles'))
                                             <form method="post" action="{{route('dashboard.roles.destroy',$role->id)}}" style="display: inline-block">
                                                 @csrf
                                                 @method('delete')
