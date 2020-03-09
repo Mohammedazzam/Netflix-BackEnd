@@ -20,4 +20,8 @@ Route::prefix('dashboard')
     Route::resource('users','UserController')->except(['show']);
 
 
+        Route::get('/setting_social_login','SettingController@social_login')->name('settings.social_login');
+        Route::get('/setting_social_links','SettingController@social_links')->name('settings.social_links');
+        Route::post('/settings','SettingController@store')->name('settings.store');
+
     });
