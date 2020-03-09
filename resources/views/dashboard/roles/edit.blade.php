@@ -45,7 +45,7 @@
                             <tbody>
                             @php
 
-                                $models = ['categories','users']
+                                $models = ['categories','movies','users','settings'];
 
                             @endphp
 
@@ -60,6 +60,16 @@
                                             $permissions_maps=['create','read','update','delete']
 
                                         @endphp
+
+                                        @if($model == ['setting'])
+
+                                            @php
+
+                                                $permissions_maps=['create','read']
+
+                                            @endphp
+
+                                        @endif
 
                                         <select name="permissions[]" class="form-control select2" multiple>
 

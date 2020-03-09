@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bc7f5b9-b9dc-4b2e-a910-02d71eb500fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +32,12 @@
           <entry key="env" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="3" />
-          <entry key="php" value="150" />
+          <entry key="php" value="153" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="79" />
+          <entry key="Blade" value="82" />
           <entry key="CSS" value="1" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="1" />
@@ -48,15 +48,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="7" />
-          <entry key="php" value="12097" />
-          <entry key="txt" value="3504" />
+          <entry key="php" value="12226" />
+          <entry key="txt" value="3592" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="5959" />
-          <entry key="PHP" value="6138" />
-          <entry key="PLAIN_TEXT" value="3511" />
+          <entry key="Blade" value="6087" />
+          <entry key="PHP" value="6139" />
+          <entry key="PLAIN_TEXT" value="3599" />
         </counts>
       </usages-collector>
     </session>
@@ -81,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="58">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#50#86#0#PHP" expanded="true" />
               </folding>
@@ -93,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_195256_create_movies_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -108,10 +108,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+            <state relative-caret-position="166">
+              <caret line="46" column="62" selection-start-line="46" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -203,7 +212,6 @@
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/LaratrustSeeder.php" />
         <option value="$PROJECT_DIR$/app/Role.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" />
@@ -232,6 +240,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_03_09_195256_create_movies_table.php" />
         <option value="$PROJECT_DIR$/config/laratrust_seeder.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -461,21 +470,7 @@
       <workItem from="1583269067751" duration="28064000" />
       <workItem from="1583529070262" duration="4381000" />
       <workItem from="1583577652930" duration="32777000" />
-      <workItem from="1583779135985" duration="5861000" />
-    </task>
-    <task id="LOCAL-00034" summary="7.6(عمل ميديل وير + ترتيب الكود)">
-      <created>1583330814816</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1583330814816</updated>
-    </task>
-    <task id="LOCAL-00035" summary="7.7(عمل الكونترولر الخاص باالرولز + عمل السكوب + عمل الراوت)">
-      <created>1583332597189</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1583332597189</updated>
+      <workItem from="1583779135985" duration="7596000" />
     </task>
     <task id="LOCAL-00036" summary="7.8(عمل الصفحات الخاصة للرول)">
       <created>1583333067386</created>
@@ -806,11 +801,25 @@
       <option name="project" value="LOCAL" />
       <updated>1583787955902</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="16.6(هذه خاصة للإضافة الصلاحيات في الرولز)">
+      <created>1583788167947</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1583788167947</updated>
+    </task>
+    <task id="LOCAL-00084" summary="16.6(خليت ال setting فقط تقوم بعمل create+ reade في الرولز)">
+      <created>1583789575699</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1583789575699</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98182000" />
+    <option name="totallyTimeSpent" value="99917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="872" height="868" extended-state="0" />
@@ -845,8 +854,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.5(استخدمت ال with للرولز كمان)" />
-    <MESSAGE value="11.6(لإظهار ال users Count)" />
     <MESSAGE value="11.7(عمل جزئية إضافة رولز جديدة من خلال ال create لليوزر)" />
     <MESSAGE value="12(عمل فلتر للرولز في اليوزر)" />
     <MESSAGE value="12.2(عمل ما يلزم للفلتر من السكوب + الفيو)" />
@@ -870,7 +877,9 @@
     <MESSAGE value="16.3(عملت الكونترولر للموفي نفس تبع الرولز ولكن بعض التغيرات )" />
     <MESSAGE value="16.4(تعديل الكونترولر واضافة الموفي في السايد وعمل الراوت)" />
     <MESSAGE value="16.5(إضافة الحقول للداتا)" />
-    <option name="LAST_COMMIT_MESSAGE" value="16.5(إضافة الحقول للداتا)" />
+    <MESSAGE value="16.6(هذه خاصة للإضافة الصلاحيات في الرولز)" />
+    <MESSAGE value="16.6(خليت ال setting فقط تقوم بعمل create+ reade في الرولز)" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.6(خليت ال setting فقط تقوم بعمل create+ reade في الرولز)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/WelcomeController.php">
@@ -960,13 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-727">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1203,7 +1205,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/MovieController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#50#86#0#PHP" expanded="true" />
           </folding>
@@ -1213,7 +1215,7 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_195256_create_movies_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1226,8 +1228,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        <state relative-caret-position="166">
+          <caret line="46" column="62" selection-start-line="46" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/roles/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
