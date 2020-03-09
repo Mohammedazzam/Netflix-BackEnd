@@ -36,7 +36,7 @@
                     {{-- client id--}}
 
                     <div class="form-group">
-                        <label>{{$social_site }} client id</label>
+                        <label class="text-capitalize">{{$social_site }} client id</label>
                         <input type="text" name="{{$social_site }}_client_id" class="form-control" value="{{setting($social_site. '_client_id')}}">
                     </div>
 
