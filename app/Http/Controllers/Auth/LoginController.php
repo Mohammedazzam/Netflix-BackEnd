@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -37,4 +39,53 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-}
+
+
+    public function redirectToProvider($provider)
+    {
+
+        config([
+            'services.'. $provider .'.client_id' =>setting($provider.'_client_id'),
+            'services.'. $provider .'.client_secret' =>setting($provider.'_client_secret'),
+            'services.'. $provider .'redirect_url' =>setting($provider.'_redirect_url'),
+        ]);
+
+        return Socialite::driver($provider)->redirect();
+    }
+
+    public function handleProviderCallback($provider)
+    {
+        try{
+            $social_user = Socialite::driver($provider)->user();
+
+        }catch (Exception $e){
+
+            return redirect('/');
+        }
+
+        $user = User::where('provider', $provider) //هذا بمعنى انني لازم في ال users table أحط كولمن جديد باسم provider و provider_id
+            ->where('provider_id',$social_user->getId())
+            ->first(); //وهتلي أول واحد
+
+        if ($user){
+
+          $user=User::create([
+                'name' => $social_user->getName(),
+                'email' => $social_user->getEmail(),
+                'provider' => $provider,
+                'provider_id' => $social_user->getId(),
+
+            ]);
+
+          $user->attachRole('user');//حتى أعرف انو الشخص الي دخل عندي دخل كيوزر
+
+        }//end of if
+
+    Auth::login($user,true); //اعملي login لل user الي لقيته او سجلت فيه ودخلو عندي بال true
+
+        return redirect()->intended('/');
+
+    }//end of handel callback
+
+
+}//end of controller
