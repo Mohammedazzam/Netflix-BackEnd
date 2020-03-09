@@ -16,6 +16,15 @@
         <div class="col-md-12">
             <div class="tile mb-4">
 
+                <div class="d-flex justify-content-center align-items-center flex-column"
+                     style="height: 25vh; border: 1px solid black">
+
+                    <i class="fa fa-video-camera fa-2x"></i>
+
+                    <p>Click To Upload</p>
+
+                </div>
+
                 <form method="post" action="{{ route('dashboard.movies.store') }}">
                     @csrf
                     @method('post')
