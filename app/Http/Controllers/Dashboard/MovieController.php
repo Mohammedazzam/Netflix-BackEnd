@@ -11,15 +11,12 @@ class MovieController extends Controller
 
     public function __construct()
     {
-        $this->middleware('permission:read_Movies')->only(['index']);
-        $this->middleware('permission:create_Movies')->only(['create','store']);
-        $this->middleware('permission:update_Movies')->only(['edit','update']);
-        $this->middleware('permission:delete_Movies')->only(['destroy']);
+
     }
 
     public function index(){
 
-        $Movies = Movie::paginate(5);
+        $movies = Movie::paginate(5);
 //        $Movies = Movie::WhereMovieNot(['super_admin','admin','user'])->whenSearch(request()->search)->paginate(5);
 
         return view('dashboard.movies.index',compact('movies'));

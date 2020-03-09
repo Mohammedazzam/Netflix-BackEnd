@@ -4,6 +4,7 @@ return [
     'role_structure' => [
         'super_admin' => [
             'categories' => 'c,r,u,d',
+            'movies' => 'c,r,u,d',
             'roles' => 'c,r,u,d',
             'users' => 'c,r,u,d',
             'settings' => 'c,r,u,d',
