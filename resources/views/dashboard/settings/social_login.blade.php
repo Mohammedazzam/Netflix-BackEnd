@@ -8,8 +8,8 @@
 
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('dashboard.welcome') }}">Dashboard</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('dashboard.settings.index') }}">Settings</a></li>
-        <li class="breadcrumb-item active">Add</li>
+        <li class="breadcrumb-item active">Social Login</li>
+
     </ul>
 
     <div class="row">
@@ -22,26 +22,42 @@
 
                     @include('dashboard.partials._errors')
 
-                    {{--facebook client id--}}
+
+                    @php
+
+                        $social_sites=['facebook', 'google'];
+
+                    @endphp
+
+
+                    @foreach ($social_sites as $social_site)
+
+
+                    {{-- client id--}}
+
                     <div class="form-group">
-                        <label>Facebook client id</label>
-                        <input type="text" name="facebook_client_id" class="form-control" value="{{setting('facebook_client_id')}}">
+                        <label>{{$social_site }} client id</label>
+                        <input type="text" name="{{$social_site }}_client_id" class="form-control" value="{{setting($social_site. '_client_id')}}">
                     </div>
 
 
-                    {{--facebook client secret--}}
+                    {{-- client secret--}}
+
                     <div class="form-group">
-                        <label>Facebook client id</label>
-                        <input type="text" name="facebook_client_secret" class="form-control" value="{{setting('facebook_client_secret')}}">
+                        <label>{{$social_site }} client id</label>
+                        <input type="text" name="{{$social_site }}_client_secret" class="form-control" value="{{setting($social_site.'_client_secret')}}">
                     </div>
 
 
 
-                    {{--facebook redirect url--}}
+                    {{-- redirect url--}}
+
                     <div class="form-group">
-                        <label>Facebook redirect url</label>
-                        <input type="text" name="facebook_redirect_url" class="form-control" value="{{setting('redirect_redirect_url')}}">
+                        <label>{{$social_site }} redirect url</label>
+                        <input type="text" name="{{$social_site }}_redirect_url" class="form-control" value="{{setting($social_site.'_redirect_url')}}">
                     </div>
+                    @endforeach
+
 
 
 
