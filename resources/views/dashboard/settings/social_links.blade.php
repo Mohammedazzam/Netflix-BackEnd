@@ -3,57 +3,53 @@
 @section('content')
 
     <div>
-        <h2>Users</h2>
+        <h2>Settings</h2>
     </div>
 
-    <ul class="breadcrumb mt-2">
+    <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('dashboard.welcome') }}">Dashboard</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('dashboard.users.index') }}">Users</a></li>
-        <li class="breadcrumb-item active">Edit</li>
+        <li class="breadcrumb-item active">Social Login</li>
+
     </ul>
 
     <div class="row">
         <div class="col-md-12">
-            <div class="tile shadow mb-4">
+            <div class="tile mb-4">
 
-                <form method="post" action="{{ route('dashboard.users.update', $user->id) }}">
+                <form method="post" action="{{ route('dashboard.settings.store') }}">
                     @csrf
-                    @method('put')
+                    @method('post')
 
                     @include('dashboard.partials._errors')
 
-                    {{--name--}}
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" name="name" class="form-control" value="{{ old('name', $user->name) }}">
-                    </div>
 
-                    {{--email--}}
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" class="form-control" value="{{ old('email', $user->email) }}">
-                    </div>
+                    @php
 
-                    {{--roles--}}
-                    <div class="form-group">
-                        <label>Roles</label>
-                        <select name="role_id" class="form-control">
-                            @foreach ($roles as $role)
-                                <option value="{{ $role->id }}" {{ $user->hasRole($role->name) ? 'selected' : '' }}>{{ $role->name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
+                        $social_sites=['facebook', 'google','youtube'];
+
+                    @endphp
+
+
+                    @foreach ($social_sites as $social_site)
+
+
+
+                        <div class="form-group">
+                            <label class="text-capitalize">{{$social_site }} link</label>
+                            <input type="text" name="{{$social_site }}_link" class="form-control" value="{{setting($social_site. '_link')}}">
+                        </div>
+
+                    @endforeach
+
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
                     </div>
 
                 </form><!-- end of form -->
 
             </div><!-- end of tile -->
-
         </div><!-- end of col -->
-
     </div><!-- end of row -->
 
 @endsection
