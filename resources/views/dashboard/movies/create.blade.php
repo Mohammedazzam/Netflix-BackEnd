@@ -45,7 +45,12 @@
 
                 </div>
 
-                <input type="file" name="" data-movie-id="{{$movie->id}}" id="movie__file-input" style="display: none">
+                <input type="file"
+                       name=""
+                       data-movie-id="{{$movie->id}}"
+                       data-url="{{route('dashboard.movies.store')}}"
+                       id="movie__file-input"
+                       style="display: none">
 
                 <form id="movie__properties"
                       method="post"

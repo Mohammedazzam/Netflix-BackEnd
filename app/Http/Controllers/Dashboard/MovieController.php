@@ -33,16 +33,8 @@ class MovieController extends Controller
     }//end of createF
 
     public function store(Request $request){
-        $request->validate([
-            'name' => 'required|unique:movies,name',
-            'permissions' => 'required|array|min:1',
 
-        ]);
-
-        $Movie= Movie::create($request->all());
-        $Movie->attachPermissions($request->permissions);
-        session()->flash('success','data added successfully');
-        return redirect()->route('dashboard.movies.index');
+        return $request->all();
 
     }//end of store
 

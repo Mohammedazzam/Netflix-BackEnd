@@ -8,6 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard_files/css/main.css')}}">
 
@@ -61,6 +66,14 @@
 <script src="{{asset('dashboard_files/js/custom/movie.js')}}"></script>
 
 <script>
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+
     $(document).ready(function () {
         $(document).on('click', '.delete', function (e) {
             e.preventDefault();
