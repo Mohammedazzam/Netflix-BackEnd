@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('#movie__upload-wrapper').css('display','none');
         $('#movie__properties').css('display','block');
 
-        var url = $(this).data(url); //هذه بتجيبلي ال url الخاصة بال الصورة أو الفيديو المرفوع
+        var url = $(this).data('url'); //هذه بتجيبلي ال url الخاصة بال الصورة أو الفيديو المرفوع
 
 
 
@@ -18,9 +18,13 @@ $(document).ready(function () {
         $('#movie__name').val(movieName); //هنا راح يستدعي الاسم في ال input المخصص له
 
 
+        // console.log(movieName);
+        // console.log(movie);
+        // console.log(movieId)
+        // console.log(url)
 
         var formData = new FormData();
-        formData.append('movie-id',movieId); //إرسال ال id
+        formData.append('movie_id', movieId); //إرسال ال id
         formData.append('name',movieName);//إرسال اسم الصورة أو الفلم
         formData.append('movie',movie);//إرسال الفلم أو الصورة نفسها
 
@@ -50,10 +54,6 @@ $(document).ready(function () {
             },
         })
 
-        // console.log(movieName);
-        // console.log(movie);
-        // console.log(movieId)
-        // console.log(url)
 
 
     })//end of file input change

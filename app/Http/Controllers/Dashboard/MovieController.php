@@ -34,7 +34,15 @@ class MovieController extends Controller
 
     public function store(Request $request){
 
-        return $request->all();
+//        return $request->all();
+
+        $movie = Movie::FindOrFail($request->movie_id);
+        $movie->update([
+            'name' => $request->name,
+            'path' => $request->file('movie')->store('movies'), //هذا خاص للحفظ في ال storage بملف باسم movies
+        ]);
+
+        return $movie;
 
     }//end of store
 
