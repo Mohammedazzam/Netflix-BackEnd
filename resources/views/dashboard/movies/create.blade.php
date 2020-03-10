@@ -45,11 +45,11 @@
 
                 </div>
 
-                <input type="file" name="" id="movie__file-input" style="display: none">
+                <input type="file" name="" data-movie-id="{{$movie->id}}" id="movie__file-input" style="display: none">
 
                 <form id="movie__properties"
                       method="post"
-                      action="{{ route('dashboard.movies.store') }}"
+                      action="{{ route('dashboard.movies.update', $movie->id) }}"
                       style="display: none"
                 >
                     @csrf

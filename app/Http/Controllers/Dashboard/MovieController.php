@@ -26,7 +26,9 @@ class MovieController extends Controller
 
     public function create(){
 
-        return view('dashboard.movies.create');
+        $movie = Movie::create([]);
+
+        return view('dashboard.movies.create',compact('movie'));
 
     }//end of createF
 

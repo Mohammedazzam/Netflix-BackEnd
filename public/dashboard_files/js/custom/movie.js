@@ -7,13 +7,17 @@ $(document).ready(function () {
 
 
         var movie = this.files[0];
+
+        var movieId = $(this).data('movie-id');
+
         var movieName = movie.name.split('.').slice(0, -1).join('.');//هذه بتجيبلي اسم الفيديو
 
         $('#movie__name').val(movieName); //هنا راح يستدعي الاسم في ال input المخصص له
 
+
         // console.log(movieName);
         // console.log(movie);
-
+        console.log(movieId)
 
 
     })//end of file input change
