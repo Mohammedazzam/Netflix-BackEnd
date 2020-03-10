@@ -30,6 +30,8 @@
         }
     </style>
 
+    @stack('styles')
+
 </head>
 <body class="app sidebar-mini">
 
@@ -54,6 +56,10 @@
 <script src="{{asset('dashboard_files/plugins/select2/select2.min.js')}}"></script>
 
 <script src="{{asset('dashboard_files/js/main.js')}}"></script>
+
+{{--movie--}}
+<script src="{{asset('dashboard_files/js/custom/movie.js')}}"></script>
+
 <script>
     $(document).ready(function () {
         $(document).on('click', '.delete', function (e) {
