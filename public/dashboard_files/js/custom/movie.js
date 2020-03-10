@@ -8,8 +8,10 @@ $(document).ready(function () {
 
         var movie = this.files[0];
         var movieName = movie.name.split('.').slice(0, -1).join('.');//هذه بتجيبلي اسم الفيديو
-        console.log(movieName);
 
+        $('#movie__name').val(movieName); //هنا راح يستدعي الاسم في ال input المخصص له
+
+        // console.log(movieName);
         // console.log(movie);
 
 
