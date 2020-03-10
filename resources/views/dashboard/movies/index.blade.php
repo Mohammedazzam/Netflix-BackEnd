@@ -54,8 +54,6 @@
                         <tr>
                             <th>#</th>
                             <th>Name</th>
-                            <th>Permissions</th>
-                            <th>Users Count</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -65,13 +63,6 @@
                                 <tr>
                                     <td>{{$index+1}}</td>
                                     <td>{{$movie->name}}</td>
-                                    <td>
-                                        @foreach($movie->permissions as $permission)
-                                            <h5 style="display: inline-block"><span class="badge badge-primary">{{$permission->name}}</span></h5>
-                                        @endforeach
-                                    </td>
-
-                                    <td>{{$movie->users_count}}</td>
 
                                     <td>
 
