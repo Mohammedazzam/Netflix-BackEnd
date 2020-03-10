@@ -6,6 +6,14 @@ $(document).ready(function () {
         $('#movie__properties').css('display','block');
 
 
+        var movie = this.files[0];
+        var movieName = movie.name.split('.').slice(0, -1).join('.');//هذه بتجيبلي اسم الفيديو
+        console.log(movieName);
+
+        // console.log(movie);
+
+
+
     })//end of file input change
 
 })//end document ready
