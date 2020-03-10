@@ -57,10 +57,16 @@
 
                     @include('dashboard.partials._errors')
 
+                    {{--progress bar--}}
+                    <div class="form-group">
+                        <label>Uploading</label>
+                        <div class="progress">
+                            <div class="progress-bar" id="movie__upload-progress" role="progressbar"></div>
+                        </div>
+                    </div>
 
                     {{--name--}}
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
                         <input type="text" name="name" id="movie__name" class="form-control">
                     </div>
 
@@ -97,6 +103,8 @@
                         <label>Rating</label>
                         <input type="number" min="1" name="rating" class="form-control">
                     </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+
 
                 </form><!-- end of form -->
 
