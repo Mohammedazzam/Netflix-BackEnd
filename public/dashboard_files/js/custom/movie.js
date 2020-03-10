@@ -25,8 +25,8 @@ $(document).ready(function () {
 
         var formData = new FormData();
         formData.append('movie_id', movieId); //إرسال ال id
-        formData.append('name',movieName);//إرسال اسم الصورة أو الفلم
-        formData.append('movie',movie);//إرسال الفلم أو الصورة نفسها
+        formData.append('name', movieName);//إرسال اسم الصورة أو الفلم
+        formData.append('movie', movie);//إرسال الفلم أو الصورة نفسها
 
 
         $.ajax({
@@ -34,10 +34,9 @@ $(document).ready(function () {
             url: url,
             data: formData, //بمعنى هتلي الداتا وهي عبارة عن ال formData إلي محفوظة فوق من id و اسم و الصورة أو الفيديو نفسه
             method: 'POST',
-
-            processData:false,
-            contentType:false,
-            cache:false,
+            processData: false,
+            contentType: false,
+            cache: false,
 
             success:function (movie) { //هنا رجعلي
 
@@ -48,6 +47,7 @@ $(document).ready(function () {
                 xhr.upload.addEventListener("progress", function (evt) {
                     if (evt.lengthComputable) {
                         var percentComplete = Math.round(evt.loaded / evt.total * 100) + "%";
+                        $('#movie__upload-progress').css('width', percentComplete).html(percentComplete)
                     }
                 }, false);
                 return xhr;
