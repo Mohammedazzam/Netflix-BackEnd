@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\StreamMovie;
 use App\Movie;
 use Illuminate\Http\Request;
 
@@ -42,6 +43,8 @@ class MovieController extends Controller
             'path' => $request->file('movie')->store('movies'), //هذا خاص للحفظ في ال storage بملف باسم movies
         ]);
 
+        //the job in background
+        $this->dispatch(new StreamMovie($movie)); //هذه بتنادي على الجوب
         return $movie;
 
     }//end of store
