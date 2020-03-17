@@ -51,6 +51,11 @@ class MovieController extends Controller
 
     }//end of store
 
+    public function show(Movie $movie){
+
+        return $movie;
+
+    }
 
     public function edit(Movie $movie)
     {
