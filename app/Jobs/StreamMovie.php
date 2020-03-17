@@ -41,6 +41,11 @@ class StreamMovie implements ShouldQueue
         FFMpeg::fromDisk('local')
             ->open($this->movie->path)
             ->exportForHLS()
+            ->onProgress(function ($percent) {
+                $this->movie->update([
+                   'percent' =>$percent
+                ]);
+            })
             ->setSegmentLength(10)// optional
             ->addFormat($lowBitrate)
             ->addFormat($midBitrate)

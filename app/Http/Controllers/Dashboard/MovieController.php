@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Jobs\StreamMovie;
 use App\Movie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class MovieController extends Controller
 {
