@@ -38,7 +38,16 @@ $(document).ready(function () {
             contentType: false,
             cache: false,
 
-            success:function (movie) { //هنا رجعلي
+            success:function (movieBeforeProcessing) { //هنا رجعلي
+
+                var interval = setInterval(function () {//هذه عبارة عن فانكشن بتنفذ أمر كل فترة زمنية
+
+                    $.ajax({
+                        url:`/dashboard/movies/${movieBeforeProcessing.id}`,
+                        method: `GET`,
+
+                    })
+                },3000)
 
             },
 
